@@ -99,10 +99,10 @@ img{
     top: 20px;
 }
 
-#logo-inicio:hover{
+/* #logo-inicio:hover{
     transition-duration: 2s;
     transform: rotate(180deg);
-}
+} */
 
 #titulo{
     color: white;
@@ -126,12 +126,12 @@ img{
     background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
 }
 
-#btn-inicio:hover,  .boton1:hover{
+/* #btn-inicio:hover,  .boton1:hover{
     color: white;
     transform: scale(1.5);
     transition-duration: 2s;
     background-image: linear-gradient(180deg, #9fb7f5 0, #6c90d8 50%, #2c6bbb 100%);
-}
+} */
 
 footer{
     margin-top: 501px;
@@ -490,7 +490,7 @@ img{
 
   footer img{
     height: 70px;
-    width: 70px;
+    width: 58px;
     margin-left: 10px;
   }
     
