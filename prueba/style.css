@@ -1,0 +1,499 @@
+body{
+    margin: 0;
+    background: url(./fondo.jpg) no-repeat center;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+header{
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, .7);
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#jugar, #volver{   
+    width: 150px;
+    color: black;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+    font-size: 15px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+}
+
+#jugar:hover, #volver:hover{
+    color: aliceblue;
+    background-image: linear-gradient(180deg, #5c3f64 0, #4a2f5e 25%, #321f59 50%, #0a1254 75%, #000550 100%);    transform: scale(1.5);
+    transition-duration: 2s;
+}
+
+#adivinanza{
+    height: 3em;
+}
+
+#adivinanza span{
+    vertical-align: bottom;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size:2em ;
+    border-bottom: 2px solid black;
+    margin-right: 6px;
+
+}
+
+#letras{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+#letras button {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+    border-radius: 10px;
+
+}
+
+#resultado{
+    color: red;
+    font-size: 20px ;   
+}
+
+#resultados {
+    color: green;
+    font-size: 20px ;
+}
+
+/* iniicio */
+
+#inicio-header{
+    height: 100px;
+    background: black;   
+}
+
+#logo-inicio{
+    right: 600px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+}
+
+#logo-inicio:hover{
+    transition-duration: 2s;
+    transform: rotate(180deg);
+}
+
+#titulo{
+    color: white;
+    margin-top: -10px;
+}
+
+#main-inicio{
+    background: none;
+}
+
+#btn-inicio{
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    position: relative;
+    left: 415px;
+    top: 133px;
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+}
+
+#btn-inicio:hover,  .boton1:hover{
+    color: white;
+    transform: scale(1.5);
+    transition-duration: 2s;
+    background-image: linear-gradient(180deg, #9fb7f5 0, #6c90d8 50%, #2c6bbb 100%);
+}
+
+footer{
+    margin-top: 501px;
+    color: white;
+    background-color: black;
+    height: 110px;
+}
+
+footer img{
+    background: black;
+    margin-left: 148px;
+    height: 100px;
+    width: 200px;
+}
+
+/* agregar palabra */
+
+#input{
+    width: 500px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.boton1{
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 5px;
+    font-size: 20px;
+    width: 250px;
+    height: 80px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+    border-radius: 10px;
+}
+
+#main-inicio0{
+    background: none;
+    position: absolute;
+    left: 195px;
+    top: 180px;
+}
+
+.footer-agregar{
+    margin-top: 601px;
+    color: white;
+    background-color: black;
+    height: 110px;
+}
+
+/* responsive */
+
+/* formato desktop extra grande*/
+
+@media only screen and (max-width: 1200px){
+
+    
+
+    /* agregar */
+    .footer-agregar{
+       margin-top: 800px;
+    }
+    .boton1{
+        width: 200px;
+        margin-left: 5%;
+    }
+
+    #main-inicio0{
+        top: 385px;
+        left: 17%;
+    } 
+
+    /* inicio */
+    #logo-inicio{
+        right: 500px;
+    }
+
+    #btn-inicio{
+        width: 300px;
+        font-size: 30px;
+        left: 20%;
+        top: 230px;
+    }
+
+    footer{
+        margin-top: 150px;
+
+    }
+
+    footer img{
+        margin-left: 10%;
+    }
+
+    /* ahoecado */
+    main{
+        height: 660px;
+        gap: 60px;
+        width: 60%;
+    }
+
+    #jugar, #volver{
+        width: 250px;
+        margin-left: 10px;
+        height: 50px;
+    }
+
+    #letras button {
+        width: 50px;
+        font-size: 40px;
+    }
+
+
+    
+    }
+/* formato desktop grande*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    #logo-inicio{
+        right: 440px ;
+    }
+
+    #btn-inicio{
+       left: 67px;   
+    }
+
+    .boton1{
+        width: 200px;
+    }
+
+    footer img{
+        margin-left: 60px;
+    }
+
+    footer{
+        margin-top: 300px
+    }
+    main{
+        width: 80%;
+    }
+
+    #main-inicio0{
+       left: 100px;
+       top: 200px;
+    }
+}
+
+/* formato destop pequeno/tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    #logo-inicio{
+       right: 400px;
+    }
+
+    #btn-inicio{
+        left: -16px;
+        font-size: 20px;
+        top: 150px;
+    }
+    
+    footer img{
+        margin-left: 20px
+    }
+
+    footer{
+        margin-top: 170px ;
+    }
+
+    #main-inicio0{
+     left: 40px ;
+     top: 270px;   
+    }
+
+    #jugar, #volver{
+        margin-left: -35px;
+        height: 30px;
+    }
+    main{
+        height: 425px;
+        width: 75%;
+    }
+
+    #letras{
+        display: contents;
+    } 
+
+    #letras button {
+        width: 30px;
+        font-size: 20px;
+    }
+}
+
+/* formato tablet */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+
+    #logo-inicio{
+        right: 292px;
+    }
+
+    #main-inicio0{
+      left: -10px;
+    }
+
+   #input{
+    height: 50px;
+    width: 300px;
+   } 
+
+   .boton1 {
+    height: 50px;
+    margin-left: -5px;
+    width: 150px;
+   }
+
+   #btn-inicio{
+    left: 51px;
+    width: 200px;
+    font-size: 20px;
+    top: 170px;
+}
+   main{
+    width: 90%;
+    gap: 20px;
+    height: 510px;
+   }
+
+   #letras button
+{
+    width: 34px;
+    font-size: 22px;
+}
+    footer img {
+        margin-left: 10px;
+        width: 150px;
+        }
+}
+
+/* Teléfonos */
+@media only screen and (min-width: 481px) and (max-width: 575px){
+
+   header{
+       width: 100vh;
+   }
+
+  #logo-inicio{
+      right: 232px ;
+  }
+img{
+    width: 200px;
+}
+  #btn-inicio{
+    left: 52px;
+    font-size: 20px;
+    width: 200px;
+    top: 200px;
+  }
+
+  main{
+    width: 95%;
+    gap: 0px;
+    height: 650px;
+}
+
+#jugar, #volver{
+    width: 200px;
+    margin-left: 24px;
+    height: 30px;
+}
+
+#letras{
+    display: table-header-group;
+}
+  #letras button{
+    width: 48px;
+    font-size: 28px;
+  }
+#titulo{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#main-inicio0{
+    left: -8px;
+    top: 280px;
+}
+
+#input{
+    width: 200px;
+    font-size: 15px;
+}
+
+.boton1{
+    font-size: 18px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+
+  footer img{
+    margin-left: 0;
+    width: 135px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #titulo{
+        font-size: 18px;
+    }
+
+    #main-inicio0{
+        left: 37px;
+        top: 200px;
+        height: 84vh;
+    }
+
+    #input{
+        width: 245px;
+    }
+  
+   
+  #logo-inicio{
+    right: 162px;
+    height: 30px;
+    width: 30px;
+  }
+
+  main{
+      display: block;
+      width: 280px;
+      height: 1100px;
+
+  }
+
+
+
+  #btn-inicio{
+    left: 17px;
+    width: 260px;
+    font-size: 25px;
+    top: 213px;
+  }
+
+  #imagenes{
+      height: 200px;
+      width: 260px;
+  }
+
+  #jugar, #volver{
+      margin-top: 20px;
+  }
+
+  footer{
+    margin-top: -110px;
+  }
+
+  footer img{
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+  }
+    
+  }
+
